@@ -11,3 +11,7 @@ def test_add_negs():
 
 def test_add_neg_pos():
     assert add(1, -1) == 0
+
+
+def test_add_zero():
+    assert add(1, 0) == 1
