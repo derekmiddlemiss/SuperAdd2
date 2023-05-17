@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2023-05-17)
+### Feature
+* Moar tests ([`78eb3e0`](https://github.com/derekmiddlemiss/SuperAdd2/commit/78eb3e0ad9e70997a2fb2e91d5020e191edbaf63))
+
 ## v0.2.0 (2023-05-17)
 ### Feature
 * Adds more tests ([`08b1efa`](https://github.com/derekmiddlemiss/SuperAdd2/commit/08b1efa65f919988f0fd8b76705b4230592edf1c))
