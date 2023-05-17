@@ -1,0 +1,51 @@
+name: Create PR, code quality checks
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch repo
+        uses: actions/checkout@v3
+
+      - name: Install poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'poetry'
+
+      - name: Configure poetry
+        shell: bash
+        run: poetry config virtualenvs.in-project true
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Run unit tests
+        run: poetry run pytest
+
+      - name: Linting
+        run: poetry run flake8 --exclude .git,__pycache__,build,dist,.venv
+
+  create_pr:
+    runs-on: ubuntu-latest
+    needs: quality
+    steps:
+      - name: Fetch repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Auto Pull Request
+          title: Auto pull request
+          branch: ${{ github.ref }}
+          base: main
