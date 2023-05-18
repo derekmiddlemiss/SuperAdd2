@@ -1,4 +1,4 @@
-from super_add.add import add
+from super_add import add
 
 
 def test_add_simple():
