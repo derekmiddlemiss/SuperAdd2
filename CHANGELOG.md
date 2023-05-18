@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.1 (2023-05-18)
+### Fix
+* Restructure ([`d033310`](https://github.com/derekmiddlemiss/SuperAdd2/commit/d033310927be68fbcabb6d165855021f5477a4ad))
+
 ## v0.3.0 (2023-05-17)
 ### Feature
 * Moar tests ([`78eb3e0`](https://github.com/derekmiddlemiss/SuperAdd2/commit/78eb3e0ad9e70997a2fb2e91d5020e191edbaf63))
