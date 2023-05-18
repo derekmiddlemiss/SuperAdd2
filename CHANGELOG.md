@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.2 (2023-05-18)
+### Fix
+* Dunder imports linting ([`0ef5c9d`](https://github.com/derekmiddlemiss/SuperAdd2/commit/0ef5c9d690cdd440676d79d990ce882d31ff2524))
+* Tests imports ([`72764e6`](https://github.com/derekmiddlemiss/SuperAdd2/commit/72764e630195c2722a16e3be02b7a5a5f30e191b))
+* Imports dunder init ([`4201f25`](https://github.com/derekmiddlemiss/SuperAdd2/commit/4201f25dc38938b5390d416e46d48723b0ff2883))
+
 ## v0.3.1 (2023-05-18)
 ### Fix
 * Restructure ([`d033310`](https://github.com/derekmiddlemiss/SuperAdd2/commit/d033310927be68fbcabb6d165855021f5477a4ad))
