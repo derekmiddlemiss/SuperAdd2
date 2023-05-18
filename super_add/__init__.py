@@ -1,2 +1,2 @@
 __version__ = '0.3.1'
-from add import add
+from .add import add
