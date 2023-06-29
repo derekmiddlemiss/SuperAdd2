@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2023-06-29)
+### Feature
+* Adds test_add_zeros. ([`800be68`](https://github.com/derekmiddlemiss/SuperAdd2/commit/800be6841beba7d81950f00587957cf061b25268))
+
+### Fix
+* Failing zeros test ([`426d1cb`](https://github.com/derekmiddlemiss/SuperAdd2/commit/426d1cbb9cd43b050dc2eb84a1c330be75f4163f))
+
 ## v0.3.2 (2023-05-18)
 ### Fix
 * Dunder imports linting ([`0ef5c9d`](https://github.com/derekmiddlemiss/SuperAdd2/commit/0ef5c9d690cdd440676d79d990ce882d31ff2524))
