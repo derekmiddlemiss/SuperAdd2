@@ -5,8 +5,25 @@ on:
       - main
 
 jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.ADMIN_TOKEN }}
+          commit-message: Auto Pull Request
+          title: Auto pull request
+          branch: ${{ github.ref }}
+          base: main
   quality:
     runs-on: ubuntu-latest
+    needs: create_pr
     steps:
       - name: Fetch repo
         uses: actions/checkout@v3
@@ -31,21 +48,3 @@ jobs:
 
       - name: Linting
         run: poetry run flake8 --exclude .git,__pycache__,build,dist,.venv --per-file-ignores="__init__.py:F401"
-
-#  create_pr:
-#    runs-on: ubuntu-latest
-#    needs: quality
-#    steps:
-#      - name: Fetch repo
-#        uses: actions/checkout@v3
-#        with:
-#          fetch-depth: 0
-#
-#      - name: Create Pull Request
-#        uses: peter-evans/create-pull-request@v5
-#        with:
-#          token: ${{ secrets.ADMIN_TOKEN }}
-#          commit-message: Auto Pull Request
-#          title: Auto pull request
-#          branch: ${{ github.ref }}
-#          base: main
