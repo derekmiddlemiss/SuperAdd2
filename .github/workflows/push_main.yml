@@ -41,7 +41,7 @@ jobs:
         run: poetry run flake8 --exclude .git,__pycache__,build,dist,.venv --per-file-ignores="__init__.py:F401"
 
       - name: Prepare package for release
-        env:
+#        env:
 #          GH_TOKEN: ${{ secrets.ADMIN_TOKEN }}
         run: |
           git config user.name github-actions
