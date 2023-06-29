@@ -18,4 +18,4 @@ def test_add_zero():
 
 
 def test_add_zeros():
-    assert add(0, 0) == 1
+    assert add(0, 0) == 0
