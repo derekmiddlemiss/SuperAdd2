@@ -17,7 +17,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.ADMIN_TOKEN }}
-          title: Merge ${{ github.ref }} -> main
+          title: Merge ${{ github.ref_name }} -> main
           branch: ${{ github.ref }}
           base: main
   quality:
