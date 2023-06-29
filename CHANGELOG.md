@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2023-06-29)
+### Feature
+* Turn on create_pr ([`f75fd4f`](https://github.com/derekmiddlemiss/SuperAdd2/commit/f75fd4f9e1b3747bd81c28c04a86712122b8037b))
+* Turn off create_pr ([`79833a1`](https://github.com/derekmiddlemiss/SuperAdd2/commit/79833a1554e6d81e952c451754779fc14dcaeaf3))
+
 ## v0.4.0 (2023-06-29)
 ### Feature
 * Adds test_add_zeros. ([`800be68`](https://github.com/derekmiddlemiss/SuperAdd2/commit/800be6841beba7d81950f00587957cf061b25268))
