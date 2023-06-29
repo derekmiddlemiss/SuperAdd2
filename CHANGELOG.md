@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.1 (2023-06-29)
+### Fix
+* Push_main ([`753115e`](https://github.com/derekmiddlemiss/SuperAdd2/commit/753115e7fe29ceb9ea1fe3affe6f3800ac4bd253))
+* And again ([`8183321`](https://github.com/derekmiddlemiss/SuperAdd2/commit/8183321219761d58fc88f55ce2767e8bb80ec7db))
+* Once again ([`53bce30`](https://github.com/derekmiddlemiss/SuperAdd2/commit/53bce308d860a28ad8d39a8f057736588f336201))
+* Workflows again ([`97f3971`](https://github.com/derekmiddlemiss/SuperAdd2/commit/97f39714e57edcf1e2ed1cd5e030d89bd41976f2))
+
 ## v0.5.0 (2023-06-29)
 ### Feature
 * Turn on create_pr ([`f75fd4f`](https://github.com/derekmiddlemiss/SuperAdd2/commit/f75fd4f9e1b3747bd81c28c04a86712122b8037b))
